@@ -1,4 +1,4 @@
-package com.bwinchester.view;
+package com.bwinchester.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -6,4 +6,5 @@ module EmailClient {
 
     opens com.bwinchester;
     opens com.bwinchester.view;
+    opens com.bwinchester.controller;
 }
