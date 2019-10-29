@@ -1,13 +1,18 @@
 package com.bwinchester.controller;
 
-import javafx.event.ActionEvent;
+import com.bwinchester.EmailManager;
+import com.bwinchester.view.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TreeView;
 import javafx.scene.web.WebView;
 
-public class MainWindowController {
+public class MainWindowController extends BaseController {
+
+    public MainWindowController(EmailManager emailManager, ViewFactory viewFactory, String fxmlName) {
+        super(emailManager, viewFactory, fxmlName);
+    }
 
     @FXML
     private MenuItem closeFileMenu;
@@ -39,7 +44,7 @@ public class MainWindowController {
 
     @FXML
     void optionsAction() {
-
+        viewFactory.showOptionWindow();
     }
 
 }
