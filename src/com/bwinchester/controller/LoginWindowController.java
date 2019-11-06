@@ -25,7 +25,6 @@ public class LoginWindowController extends BaseController {
 
     @FXML
     void loginButtonAction() {
-        System.out.println("click!");
         viewFactory.showMainWindow();
         Stage stage = (Stage) errorLabel.getScene().getWindow();
         viewFactory.closeStage(stage);
